@@ -1,0 +1,69 @@
+main.hero {
+	background-color: #FFF4E6;
+	padding: 120px 5%;
+	background-image: url(/image/pexels-shvetsa-5012071\ \(1\).jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+main.hero .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 89vh;
+	text-align: center;
+}
+
+main .main-img img {
+	width:250px;
+	margin-top: -5rem;
+}
+
+main .main-text h1 {
+	font-size: 3rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	margin-bottom: 1rem;
+	line-height: 70px;
+	color: #757575;
+}
+
+main .main-text h1 span {
+	color: #F4B400;
+}
+
+main .main-text p {
+	font-size: 1.5rem;
+	font-family: "Lato", sans-serif;
+	margin-bottom: 2rem;
+	line-height: 2rem;
+	color: #757575;
+}
+
+@media (max-width:480px) {
+	main.hero {
+		min-height: 100vh;
+		text-align: center;
+		padding: 60px 5%;
+	}
+
+	main .main-img img {
+		width: 100%;
+		margin: 1rem 0;
+
+	}
+
+	main .main-text h1 {
+		font-size: 2.5rem;
+		line-height: 50px;
+	}
+
+	main .main-text p {
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+	}
+
+}

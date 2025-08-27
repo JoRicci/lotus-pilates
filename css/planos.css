@@ -1,0 +1,233 @@
+section.planos {
+	padding: 120px 5%;
+	min-height: 100vh;
+	background-color: #FFF4E6;
+}
+
+section.planos .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section.planos .container h2 {
+	font-size: 3rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	margin-bottom: 3rem;
+	color: #757575;
+}
+
+.planos-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 5rem;
+}
+
+.plano-card {
+	background: #fff;
+	border-radius: 12px;
+	padding: 25px 20px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	position: relative;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.plano-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.plano-card i {
+	font-size: 2rem;
+	color: #f28c28;
+	margin: 20px 0;
+	text-align: center;
+	display: block;
+}
+
+.plano-card h3 {
+	font-size: 1.2rem;
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 15px;
+	color: #333;
+}
+
+.plano-card p {
+	margin-bottom: 1rem;
+	font-family: "Lato", sans-serif;
+	font-size: 1rem;
+	color: #444;
+}
+
+section.planos .btn-plano {
+	margin-top: 15px;
+	border: none;
+	padding: 15px 20px;
+	border-radius: 8px;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s;
+	align-items: center;
+  font-size: 1rem;
+}
+
+
+.btn-plano:hover {
+	background: linear-gradient(90deg, #f7a947, #f28c28);
+}
+
+
+.plano-card.destaque {
+	border: 2px solid #f28c28;
+	transform: scale(1.05);
+}
+
+.plano-card.destaque .tag {
+	background: #f28c28;
+	color: #fff;
+	font-weight: bold;
+	width: 100%;
+	padding: 10px;
+	border-radius: 8px 8px 0px 0px;
+	position: absolute;
+	text-align: center;
+	font-size: 1rem;
+	font-family: "Lato", sans-serif;
+	top: -1px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.planos-box {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 2rem;
+}
+
+.pagamento {
+	text-align: center;
+	padding: 30px 0;
+}
+
+.pagamento h3 {
+	font-size: 3rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	margin-bottom: 1rem;
+	color: #757575;
+}
+
+.pagamento-opcoes {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+	padding: 15px;
+}
+
+.opcao {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 0.9rem;
+	color: #555;
+}
+
+.opcao span {
+	margin-bottom: 1rem;
+	font-family: "Lato", sans-serif;
+	font-size: 1rem;
+	color: #444;
+}
+
+.opcao i {
+	font-size: 2rem;
+	color: #f28c28;
+	margin-bottom: 5px;
+}
+
+.parceiros {
+	text-align: center;
+	padding: 30px 0;
+}
+
+.parceiros h3 {
+	font-size: 3rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	margin-bottom: 2rem;
+	color: #757575;
+}
+
+.parceiros-logos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 60px;
+	flex-wrap: wrap;
+}
+
+.parceiro img {
+	max-height: 200px;
+	max-width: 200px;
+	border-radius: 8px;
+	transition: transform 0.3s ease;
+}
+
+.parceiro img:hover {
+	transform: scale(1.1);
+}
+
+
+@media (max-width:480px) {
+	section.planos {
+		padding: 60px 5%;
+		min-height: 80vh;
+		background-color: #FFF4E6;
+	}
+
+	.planos-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.planos-box {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Notebooks: 3 colunas */
+@media (max-width: 1366px) and (min-width: 1025px) {
+	.planos-grid {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
+	}
+
+	.plano-card {
+		width: 250px;
+		;
+	}
+}
+
+/* Tablets: 2 colunas */
+@media (max-width: 1024px) {
+	.planos-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+	}
+}
+
+/* Celulares: 1 coluna */
+@media (max-width: 600px) {
+	.planos-grid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+}

@@ -1,0 +1,123 @@
+section.sobre {
+	padding: 120px 5%;
+	background-color: #A3B18A;
+	min-height: 100vh;
+}
+
+section.sobre .container {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
+section.sobre .sobre-01 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+}
+
+section.sobre .sobre-01 h2 {
+	font-size: 3rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	margin-bottom: 1rem;
+	line-height: 70px;
+	color: #757575;
+	margin-bottom: 3rem;
+	position: relative;
+}
+
+section.sobre .sobre-01 p {
+	font-size: 1.5rem;
+	font-family: "Lato", sans-serif;
+	margin-bottom: 2rem;
+	line-height: 2rem;
+	color: #757575;
+}
+
+section.sobre .sobre-01 img {
+	max-width: 400px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+section.sobre img {
+	object-fit: cover;
+	border-radius: 8px;
+	width: 100%;
+	height: 100%;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+section.sobre .sobre-02 h3 {
+	font-size: 3rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	margin-bottom: 1rem;
+	line-height: 70px;
+	color: #757575;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+section.sobre .sobre-02 .sobre-img {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+}
+
+@media (max-width: 1366px) and (min-width: 1025px) {
+	section.sobre .sobre-01 {
+		gap: 1rem;
+		place-items: center;
+	}
+
+	section.sobre .container {
+		gap: 1rem;
+	}
+
+	section.sobre .sobre-01 h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	section.sobre .sobre-02 h3 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+}
+
+@media (max-width:480px) {
+
+	section.sobre {
+		padding: 80px 5%;
+		text-align: center;
+	}
+
+	section.sobre .sobre-01 {
+		grid-template-columns: 1fr;
+		align-items: center;
+		place-content: center;
+	}
+
+
+	section.sobre .sobre-01 h2 {
+		font-size: 2rem;
+		font-family: "Poppins", sans-serif;
+		margin-bottom: 1rem;
+	}
+
+	section.sobre .sobre-01 p {
+		font-size: 1.5rem;
+	}
+
+	section.sobre .sobre-02 .sobre-img {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+
+
+}
